@@ -11,7 +11,7 @@ export class RackViewComponent implements OnInit {
 
     public docked: boolean = false;
     public tampering: boolean = false;
-    public bikeLocked: boolean = true;
+    public locked: boolean = true;
 
     private subscription: Subscription;
     public message: string;
@@ -24,6 +24,7 @@ export class RackViewComponent implements OnInit {
             this.docked = this.messageBike === '1';
             console.log(this.docked);
             console.log(this.messageBike);
+            this.locked = this.messageBike == 'true';
         });
 
         this.subscription = this._mqttService.observe('elevate/alarm').subscribe((message: IMqttMessage) => {
