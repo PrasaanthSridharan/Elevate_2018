@@ -12,9 +12,9 @@ import {
 } from "@angular/material";
 
 import { AppComponent } from "./app.component";
-import { HeaderComponent } from "./header/header.component";
+import { HeaderComponent } from "./components/header/header.component";
 import { AppRoutingModule } from "./app-routing.module";
-import { DashboardModule } from "./dashboard/dashboard.module";
+import { DashboardModule } from "./modules/dashboard/dashboard.module";
 
 @NgModule({
   declarations: [
