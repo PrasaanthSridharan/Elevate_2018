@@ -8,8 +8,8 @@
   <br/><div class="center"><button type="button" class="btn btn-success btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Open Lock</button></div>
   <h5>Status Report</h5>
   <hr/>
-  <p><span class="question">Rack Reserved: </span> <span class="answer">Yes</span></p>
-  <p><span class="question">Bike Docked: </span> <span class="answer"></span></p>
+  <!--<p><span class="question">Rack Reserved: </span> <span class="answer">Yes</span></p>-->
+  <p><span class="question">Bike Docked: </span> <span class="answer">{{data['docked']}}</span></p>
   <p><span class="question">Bike Locked: </span> <span class="answer"></span></p>
-  <span style="text-align: center;"><span class="red" style="display: block;">Tamper Detected!</span></span>
+  <span [hidden]="!data['tampering']" style="text-align: center;"><span class="red" style="display: block;">Tamper Detected!</span></span>
 </div>
