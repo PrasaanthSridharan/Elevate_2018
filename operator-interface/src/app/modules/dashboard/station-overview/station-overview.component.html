@@ -10,5 +10,5 @@
     </div>
     <p class="center"><span class="green-color">{{data["currentAvailability"]}}</span> of <span class="red-color">{{data["totalAvailability"]}}</span> available</p>
     <div class="status-circle" [ngClass]="data['isFault']? 'red' : 'green'"></div><span class="fault-text">0 Faults</span>
-    <br/><div class="center"><button type="button" class="btn btn-danger btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>See more details</button></div>
+    <br/><div class="center"><button type="button" class="btn btn-danger btn-lg btn3d" (click)="onClick()"><span class="glyphicon glyphicon-ok"></span>See more details</button></div>
 </div>

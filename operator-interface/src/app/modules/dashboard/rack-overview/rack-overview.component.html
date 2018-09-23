@@ -1,11 +1,15 @@
 <div class="rack-overview-outline" xmlns="http://www.w3.org/1999/html">
-  <h2>Rack {{data['rackNumber']}} Status</h2>
+  <h2>Rack {{data['rackNumber']}} Status </h2> <div class="status-circle" [ngClass]="'green'"></div>
   <hr/>
   <p class="id"><span class="bold">ID</span>: <span class="id-value">{{data['id']}}</span></p>
 
   <p><span class="bold location">Location</span><br/><span>{{data['location']}}</span></p>
 
-  <p class="center"><span class="green-color">{{data["currentAvailability"]}}</span> of <span class="red-color">{{data["totalAvailability"]}}</span> available</p>
-  <div class="status-circle" [ngClass]="'green'"></div><span class="fault-text">Not occupied</span>
   <br/><div class="center"><button type="button" class="btn btn-success btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>Open Lock</button></div>
+  <h5>Status Report</h5>
+  <hr/>
+  <p><span class="question">Rack Reserved: </span> <span class="answer">Yes</span></p>
+  <p><span class="question">Bike Docked: </span> <span class="answer"></span></p>
+  <p><span class="question">Bike Locked: </span> <span class="answer"></span></p>
+  <span style="text-align: center;"><span class="red" style="display: block;">Tamper Detected!</span></span>
 </div>

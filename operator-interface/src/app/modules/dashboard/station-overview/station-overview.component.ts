@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-station-overview',
@@ -11,7 +12,7 @@ export class StationOverviewComponent implements OnInit {
     public colorStyle: string = "green";
     private id:string;
 
-    constructor() {
+    constructor(public router: Router) {
 
     }
 
@@ -22,6 +23,10 @@ export class StationOverviewComponent implements OnInit {
     alternateColor() {
         console.log(this.colorStyle);
         this.colorStyle = this.colorStyle == "green"? "red" : "green";
+    }
+
+    onClick() {
+        this.router.navigate(['/rack']);
     }
 
 }
