@@ -11,10 +11,6 @@ export class DashboardViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let _self = this;
-    setInterval(function() {
-      _self.isFault = !_self.isFault;
-    }, 1000);
   }
 
 }
