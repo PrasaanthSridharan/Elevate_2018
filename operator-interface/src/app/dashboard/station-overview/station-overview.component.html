@@ -1,0 +1,14 @@
+<div class="station-overview-outline" xmlns="http://www.w3.org/1999/html">
+    <h2>Station Status</h2>
+    <hr/>
+    <p class="id"><span class="bold">ID</span>: <span class="id-value">{{data['id']}}</span></p>
+
+    <p><span class="bold location">Location</span><br/><span>{{data['location']}}</span></p>
+
+    <div class="progress">
+        <div class="progress-bar bg-warning" [style.width]="data['currentAvailability']/data['totalAvailability']*100+ '%'"></div>
+    </div>
+    <p class="center"><span class="green-color">{{data["currentAvailability"]}}</span> of <span class="red-color">{{data["totalAvailability"]}}</span> available</p>
+    <div class="status-circle" [ngClass]="data['isFault']? 'red' : 'green'"></div><span class="fault-text">0 Faults</span>
+    <br/><div class="center"><button type="button" class="btn btn-danger btn-lg btn3d"><span class="glyphicon glyphicon-ok"></span>See more details</button></div>
+</div>

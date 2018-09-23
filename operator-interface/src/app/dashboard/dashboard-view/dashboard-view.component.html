@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <h1>Operator Dashboard</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <app-station-overview
+                [data]='{
+      "currentAvailability": 1,
+      "totalAvailability": 5,
+      "isFault": isFault,
+      "id": "991f461b-1047-441a-9176-458e8c031818",
+      "location": "101 College St, Toronto, ON M5G 1L7"
+    }'>
+            </app-station-overview>
+        </div>
+        <div class="col-lg-4">
+            <app-station-overview
+                [data]='{
+      "currentAvailability": 0,
+      "totalAvailability": 5,
+      "isFault": isFault,
+      "id": "15f8e32b-f11e-4c2a-9f65-7be7d1d5fd12",
+      "location": "777 Bay St, Toronto, ON M5G 2C8"
+    }'>
+            </app-station-overview>
+        </div>
+        <div class="col-lg-4">
+            <app-station-overview
+                [data]='{
+      "currentAvailability": 4,
+      "totalAvailability": 5,
+      "isFault": isFault,
+      "id": "82d4e1bd-9243-446c-9521-0b7a066e3d87",
+      "location": "27 Kings College Cir, Toronto, ON M5S 3H7"
+    }'>
+            </app-station-overview>
+        </div>
+    </div>
+</div>
