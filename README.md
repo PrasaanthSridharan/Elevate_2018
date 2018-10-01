@@ -26,11 +26,11 @@ Mechanical Design/
 ```
 This directory encomposes Solid Works and AutoDesk Inventor files for the 3D printed small scale prototype as well as the large scale equivalent. 
 
-![Logo](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Presentation%20Resources/bike_rack_3d_rendering_2.png)
+![Mechanical Design 1](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Presentation%20Resources/bike_rack_3d_rendering_2.png)
 
-![Logo](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Presentation%20Resources/bike_rack_3d_rendering_1.png)
+![Mechanical Design 2](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Presentation%20Resources/bike_rack_3d_rendering_1.png)
 
-![Logo](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Presentation%20Resources/bike_rack_3d_rendering_3.png)
+![Mechanical Design 3](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Presentation%20Resources/bike_rack_3d_rendering_3.png)
 
 
 ## 2 Software 
@@ -38,6 +38,17 @@ The software is composed of 3 major components as follows: IoT, Android, and Web
 ### 2.1 IoT - Raspberry Pi 3 B
 The Raspberry Pi is at the heart of the IoT system that interacts with the Android application, and operator interface to interact with the physical sensors and actuators of the bike rack system. 
 ### 2.2 Android - Smart Lock
+The Android application serves to be the authentication and authorization tool to communicate with the physical bike rack in being able to reserve, lock, and unlock the bike rack. 
+
+![Android Screenshot 1](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Android/screenshot_1.png)
+
 ### 2.3 Web - Operator Interface 
 
+The operator interface serves to be the monitoring center for all bike stations under the purview of security. From the operator interface, you can view the current docked status, lock status, and tampering status of a bike rack in a station with live updating. 
+
+![Station Overview](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Web/screenshot_station.png)
+
+![Rack Overview](https://raw.githubusercontent.com/PrasaanthSridharan/Elevate_2018/master/Web/screenshot_rack.png)
+
 ## 3 Presentation Resources 
+The presentation file can be found [here](https://github.com/PrasaanthSridharan/Elevate_2018/blob/master/Presentation%20Resources/Presentation%20for%20IronRack.pptx). 
